@@ -5,10 +5,11 @@ import styles from './Accordion.module.css'
 // multiple selection
 
 const Accordion = () => {
-    const [selected, setSelected] = useState(null)
+    const [selected, setSelected] = useState([])
     const handleSingleSelection = (id) => {
       console.log(id);
-      setSelected(id === selected ? null : id)
+      // setSelected(id === selected ? null : id)      
+      setSelected(selected.includes(id) ? selected.filter(val => val !== id) : [...selected, id])
     }
   return (
     <div className={styles.wrapper}>
@@ -22,7 +23,7 @@ const Accordion = () => {
                             <span>+</span>
                         </div>
                         {
-                          selected === item.id ? (
+                          selected.includes(item.id) ? (
                             <div className={styles.content}>{item.answer}</div>
                           ) : (
                             null
