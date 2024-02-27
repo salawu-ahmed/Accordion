@@ -4,6 +4,22 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.wrapper button {
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    background: #614101;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    transform: scale(1.2);
 }
 
 .accordion {
