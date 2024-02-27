@@ -7,7 +7,7 @@ const Accordion = () => {
     const [selected, setSelected] = useState(null)
     const handleSingleSelection = (id) => {
       console.log(id);
-      setSelected(id)
+      setSelected(id === selected ? null : id)
     }
   return (
     <div className='wrapper'>
