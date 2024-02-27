@@ -1,8 +1,15 @@
-# React + Vite
+# Accordion Project 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What I learnt
+I learnt a lot about react states and conditional rendering. This is a perfect beginners project to practice both topics
 
-Currently, two official plugins are available:
+## Implementation 
+First, I built an accordion with that opens an element if it is selected.
+    -[] open an element when it is clicked 
+    -[] close an element when it clicked while open 
+    -[] close an open element when another element is clicked 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Multi-Selection 
+    -[] open an element when it is clicked 
+    -[] close an element when it clicked while open 
+    -[] keep all open element open when another element is clicked 
